@@ -61,7 +61,7 @@ We are using jQuery file in custom configuration file, for AJAX requests to back
 You can include DropzoneJS widget in your HTML with: 
 
 ```php
-    @include('dropzoner::dropzone')
+    @include('dropzoner::dropzone', ['id'=>'dropzonersDropzone','previewid'=>'dropzonePreview'])
 ```
 
 It will take full-width of parent div. That view consists of upload form and preview template. 
