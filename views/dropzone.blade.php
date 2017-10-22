@@ -1,6 +1,6 @@
 <div>
 
-    <form action='<?php echo route("dropzoner.upload") ?>' class='dropzone' id="dropzonersDropzone">
+    <form action='<?php echo route("dropzoner.upload") ?>' class='dropzone' id="<?php echo $id ?>">
         <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
 
         <div class="dz-message"></div>
@@ -9,7 +9,7 @@
             <input name="file" type="file" multiple />
         </div>
 
-        <div class="dropzone-previews" id="dropzonePreview"></div>
+        <div class="dropzone-previews" id="<?php echo $previewid ?>"></div>
 
     </form>
 
